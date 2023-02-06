@@ -20,6 +20,6 @@ print(d4,t)'''
 d1={10:100,2:200,30:400}
 d2={4:100,2:500}
 d1.update(d2)
-print(d1)
 d1['alvido']=404
+print(d1)
 print(d1)

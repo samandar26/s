@@ -10,9 +10,6 @@ class window(QWidget):
         self.setGeometry(700,250,500,500)
         self.setFixedSize(380, 580)
         self.start()
-    def font(self,obj,x,y):
-        self.setFont(QFont("Times",35))
-        obj.move(x,y)
     def start(self):
         self.n0=QPushButton("0",self)
         self.font(self.n0,105,490)
@@ -75,6 +72,10 @@ class window(QWidget):
         self.s1=QLabel("0",self)
         self.s1.setFont(QFont("Times",20))
         self.s1.move(18,210)
+
+    def font(self,obj,x,y):
+        self.setFont(QFont("Times",35))
+        obj.move(x,y)
     
     def bir(self):
         if self.s1.text()!='0':
